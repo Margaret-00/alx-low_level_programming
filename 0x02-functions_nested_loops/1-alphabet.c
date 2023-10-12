@@ -12,4 +12,5 @@ char ch;
 for (ch m 'a'; ch <= 'z'; ch++)
 _putchar(ch);
 _putchar('\n');
+return (0);
 }
