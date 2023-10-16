@@ -3,7 +3,7 @@
  * puts_half - function that prints half of a string
  * if odd len, length of the string 
  * @str: input
- * Return: half of the input
+ * Return: print
  */
 void puts_half(char *str)
 {
@@ -22,5 +22,6 @@ void puts_half(char *str)
 	for (a = n; str[a] != '\0'; a++)
 		_putchar(str[a]);
 	_putchar('\n');
+
 }
 
