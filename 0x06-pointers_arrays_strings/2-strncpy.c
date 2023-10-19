@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * _strncpy - function that cpies a string, with number of bytes
  * @dest: Destination output
