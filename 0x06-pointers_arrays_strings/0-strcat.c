@@ -1,25 +1,23 @@
-#include <stdio.h>
-
+#include <main.h>
 /**
- * _ stract.c - function that concatenates two strings
- * @scr: input
- * @dest: output
- * return: Alywas 0
+ *_strcat - Concatenates two strings.
+ *
+ *@dest: output dest
+ *@src: input source
+ *
+ * Return: return to dest, that concatenates two strings
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
+	int i, j;
 
-int a=-1, i;
-
-	for (i = 0; dest[i]!= '\0'; i++);
-		
-do{
-     a++;
-     dest[i]=src[a];
-     i++;
-} while(src[a] != '\0');
-
-
-return (dest);
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		dest[i] = src[j];
+		i++;
+	}
+	return (dest);
 }
