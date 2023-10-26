@@ -4,9 +4,9 @@
 int _sqrt(int n, int i);
 
 /**
- * _sqrt_recursion - Returns the natural square root of a number.
- * @n: input
- * Return: the square root of n, or -1 if it doesn't have a natural square root.
+ *_sqrt_recursion - Returns the natural square root of a number.
+ *@n: input
+ *Return: Always 0
  */
 int _sqrt_recursion(int n)
 {
@@ -14,20 +14,17 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt - Function that calculates the natural square root of a number.
- * @n: number to find the square root of
- * @i: current value to check
- * Return: the square root of n, or -1 if it doesn't have a natural square root.
+ *_sqrt - Function that calculates the natural square root of a number.
+ *@n: number to find the square root of
+ *@i: current value to check
+ *Return: Always 0
  */
 int _sqrt(int n, int i)
 {
-    int result = i * i;
-
-    if (result > n)
+    int sqrt = i * i;
+    if (sqrt > n)
         return (-1);
-
-    if (result == n)
-        return i;
-
-    return _sqrt(n, i + 1);
+    if (sqrt == n)
+        return (i);
+    return (_sqrt(n, i + 1));
 }
