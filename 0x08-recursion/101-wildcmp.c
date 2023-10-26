@@ -5,7 +5,7 @@
  * @s2: string 2
  * Return: always 0
  */
-int widcmp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
 		return (0);
