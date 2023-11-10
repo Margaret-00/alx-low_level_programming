@@ -1,20 +1,21 @@
-#include "main.h"		
+#include "main.h"
 #include <stdlib.h>
 
 /**
- * create_array - function that returns a pointer to a newly allocated space
+ * create_array - Returns pointer to a newly allocated space
  * @size: size of array
  * @c: output
- * Return: 0
- */	
+ * Return: always o
+ */
 char *create_array(unsigned int size, char c)
-{	
-	char *str;	
+{
+	char *str;
 	unsigned int i;
-	str = malloc(sizeof(char) * size);		
-	if (size == 0 || str == NULL)	
+
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
-		str[i] = c;		
-	return (str);
+		str[i] = c;
+	return (NULL);
 }
